@@ -11,8 +11,7 @@
   ],
   "name": "Test App For Testing Web App URL Handlers.",
   "short_name": "Test App",
-  "scope_": "/",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "url_handlers": [
     {
       "origin": "https://island-alpine-swoop.glitch.me"
