@@ -1,5 +1,6 @@
 {
   "background_color": "purple",
+  "theme_color": "red",
   "description": "Test App. For testing 'url_handlers' web app manifest member.",
   "display": "standalone",
   "icons": [
