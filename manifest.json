@@ -1,7 +1,7 @@
 {
   "background_color": "purple",
   "theme_color": "red",
-  "description": "Test App. For testing 'url_handlers' web app manifest member.",
+  "description": "Web App URL Handlers sample app.",
   "display": "standalone",
   "icons": [
     {
@@ -10,18 +10,15 @@
       "type": "image/png"
     }
   ],
-  "name": "Test App For Testing Web App URL Handlers.",
-  "short_name": "Test App",
+  "name": "Web App URL Handlers Sample App",
+  "short_name": "Web App URL Handlers",
   "start_url": "./index.html",
   "url_handlers": [
     {
       "origin": "https://luhuangmsft.github.io"
     },
     {
-      "origin": "https://island-alpine-swoop.glitch.me"
-    },
-    {
-      "origin": "https://animated-tortoiseshell-cobra.glitch.me"
+      "origin": "https://mandymsft.github.io"
     }
   ]
 }

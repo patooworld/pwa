@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hello!</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <title>Hello!</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="manifest" href="./manifest.json" />
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- import the webpage's javascript file -->
-    <script src="./script.js" defer></script>
+  <link rel="manifest" href="./manifest.json" />
 
-    <script type="module">
-      import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";
-      const el = document.createElement("pwa-update");
-      document.body.appendChild(el);
-    </script>
-  </head>
-  <body>
-    <h1>
-      Test App For
-    </h1>
-    <h2>
-      <a href="https://github.com/WICG/pwa-url-handler/blob/master/explainer.md"
-        >Testing Web App URL Handlers</a
-      >.
-    </h2>
+  <!-- import the webpage's javascript file -->
+  <script src="./script.js" defer></script>
 
-    <img
-      src="https://cdn.glitch.com/47e82a3e-e99d-4a0a-86f9-4f8bea8ede1e%2Fastronaut-icon.png?v=1587002651149"
-      alt="Astronaut."
-      height="200"
-      width="200"
-    />
+  <script type="module">
+    import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";
+    const el = document.createElement("pwa-update");
+    document.body.appendChild(el);
+  </script>
+</head>
 
-    <!-- include the Glitch button to show what the webpage is about and
+<body>
+  <img src="https://cdn.glitch.com/47e82a3e-e99d-4a0a-86f9-4f8bea8ede1e%2Fastronaut-icon.png?v=1587002651149"
+    alt="Astronaut." height="200" width="200" />
+  <h1>
+    Web App URL Handlers Sample App
+  </h1>
+  <h2>
+    <a href="https://github.com/WICG/pwa-url-handler/blob/master/explainer.md">Explainer</a>
+  </h2>
+  <h2>
+    <a href="https://www.chromestatus.com/feature/5739732661174272">Chrome platform status</a>
+  </h2>
+  <h2>
+    <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1072058">crbug</a>
+  </h2>
+  <div>
+    Instructions:
+    <ol>
+      <li>Set browser as the OS default browser</li>
+      <li>Enable feature flag <a
+          href="about://flags/#enable-desktop-pwas-url-handling">#enable-desktop-pwas-url-handling</a></li>
+      <li>Install PWA from current page</li>
+      <li>(Optional) Disable feature flag to simulate Origin Trial behavior</li>
+      <li>Activate test URLs from the OS (eg. in Windows using the run dialog)</li>
+    </ol>
+  </div>
+  <div>
+    Test URLs:
+    <ul>
+      <li>https://luhuangmsft.github.io/pwa</li>
+      <li>https://luhuangmsft.github.io</li>
+      <li>https://luhuangmsft.github.io/target.html</li>
+      <li>https://mandymsft.github.io/pwa</li>
+      <li>https://mandymsft.github.io</li>
+      <li>https://mandymsft.github.io/404</li>
+    </ul>
+  </div>
+  <div>
+    Troubleshooting instructions:
+    <ol>
+      <li>Visit <a href="about://web-app-internals/">about://web-app-internals</a> to check that "url_handlers" in
+        manifest was parsed and applied</li>
+      <li>Visit <a href="about://local-state/">about://local-state</a> to check that web-app-origin-association data has
+        been validated and saved to "url_handler_info"</li>
+    </ol>
+  </div>
+
+  <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
-  </body>
+  <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+  <script src="https://button.glitch.me/button.js"></script>
+</body>
+
 </html>
