@@ -19,6 +19,9 @@
     },
     {
       "origin": "https://mandymsft.github.io"
+    },
+    {
+      "origin": "https://contoso.com"
     }
   ]
 }
